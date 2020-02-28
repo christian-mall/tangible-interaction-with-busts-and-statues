@@ -1,5 +1,8 @@
 # Tangible Interaction with Busts and Statues
-## Test 1
+
+## Introduction
+
 ...
-## Test 2
+## Initial tests
+
 ...
