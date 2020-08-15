@@ -18,8 +18,8 @@ The next step was to build a wooden case around the bust to build a vessel for t
 
 The silicone that was used is a SF33 - RTV2 silicone. This type of silicone is milky-transparent, very durable and heat-resistant. It’s a silicone that is made for making silicone molds and it consists of two parts:
 
-* A base
-* A catalyst
+* a base
+* a catalyst
 
 Once these two parts are properly mixed in a 1:1 ratio the silicone cures in around 3 hours at room temperature. Higher temperatures speed up the curing process. Normal silicone needs air to cure which would have been problematic here because the final mold is quite thick. The "SF33" means that its Shore hardness is "33" so it’s medium-hard. For this project 10 kg of silicone were used. But before the silicone got poured inside the vessel a thin layer of it was applied on the whole bust by using small brush. This way it is ensured that there get no air bubbles trapped in between the plaster and the silicone. After this thin layer was dried the rest of the silicone got poured inside the vessel. The following figure shows the silicone mold once it was cured.
 
@@ -44,3 +44,14 @@ The final unmolded head can be soon on the next figure.
 ![plasterHead01](https://user-images.githubusercontent.com/44895720/90313893-4519a200-df10-11ea-8af2-313304300255.jpeg)
 
 As can be seen there are a few darker spots on it. That is from the spray that has been used and that is why on subsequent experiments less of the spray was used.
+
+## Capacitive Sensing
+
+This section will describe how the capacitive sensing capabilities have been built, what materials have been used etc.
+
+For this project the following two Arduinos got used for the programming:
+
+* ARDUINO UNO REV3 (got used to implement the capacitive sensing)
+* ARDUINO MEGA 2560 REV3 (was used for the prototype that involves RFID which will get explained later on)
+
+There’s a "Capac- itive Sensing Library" for Arduino that can turn two or more Arduino pins into a capacitive sensor with the help of copper foils and resistors. These sensors can then sense the capacitance of the human body. There are also dedicated sensors available that can be bought but the approach with the copper foils offers two important advantages. They are much slimmer and their size can be adjusted because one can just cut a sensor into the desired size and shape and they also offer more customization on the software side so that the sensor can be programmed exactly the way which is best suited for the particular project.
