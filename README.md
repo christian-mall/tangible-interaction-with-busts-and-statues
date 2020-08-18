@@ -86,7 +86,7 @@ This of course brings one major problem: The plaster layer on top of the copper 
 * Another way to make the sensors better discernible from one another is to place them as far apart from each other as possible.
 * And it also helps if the sensors aren’t too tiny. Making them a little big bigger can already make a huge difference. Coin-shaped sensors with a diameter of about 2.5 cm worked quite well.
 * Another thing that got tested is whether it makes a difference if the sensor is touched on the non-glue side or on the glue side. The result was that it is better to touch it on the non-glue side because the glue apparently hinders the capacitive signal a bit but when put behind plaster the opposite is true. It is better if the foil gets properly glued onto the plaster so the direct contact is more important.
-* Another finding was that the resistors that are used make a huge difference on the quality of the readings. Too small and the signal spikes can’t be seen, too big and the whole system gets overly reactive. Then, even if someone gets near cables there are already signal spikes. A value that worked quite well for this particular scenario was 2 MΩ.
+* Another finding was that the resistors that are used make a huge difference on the quality of the readings. Too small and the signal spikes can’t be seen, too big and the whole system gets overly reactive. Then, even if someone gets near cables there are already huge signal spikes. A value that worked quite well for this particular scenario was 2 MΩ. There occur some signal spikes when the hand gets near the cables but this isn't too much of an issue because the signal spikes are larger when the actual sensors get touched and the cables also get placed behind the bust (this will get described more detailed later on).
 
 The next tests were to try to embed the copper foils into the plaster. This approach is much more difficult because the plaster now is not only on top of the foils but also behind which further amplifies the problem of the capacitive signal inadvertently spreading through the plaster. To improve the signal-to-noise ratio an experiment was conducted where two prototypes got compared. One simply had three capacitive sensors embedded into the plaster and the other one had the three capacitive sensors surrounded by another copper foil (with a thin gap in between). This copper foil got connected to a ground pin on the Arduino. This approach can be seen on the following figure.
 
@@ -97,3 +97,24 @@ This is the backside of the setup (before the additional plaster got poured). Th
 <img src="https://user-images.githubusercontent.com/44895720/90509635-ed6e7700-e159-11ea-9079-f76818043c06.png" width="600">
 
 There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the cast out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
+
+## First prototype of the interactive bust
+
+In this section it will be described how the first prototype of the interactive bust was built using the findings and tricks described in the previous section. The first step was to spray a thin layer of the anti-sticking spray into the silicone mold so that the plaster won’t stick later on (later it was found out that this step is not necessary). Once it’s dried it forms a waxy layer. Then, tilting the mold and using a brush, a thin layer of plaster got applied all over the inside of the silicone mold. There were some spots left where the plaster ran off (mainly due to the anti-sticking spray) and this is why this process got repeated once. After drying, the copper foil sensors got applied. For the first test sensors got applied behind the forehead, the nose, the cheeks and the mouth. Then the layer of hot glue was applied. The result can be seen on the next figure.
+
+<img src="https://user-images.githubusercontent.com/44895720/90517991-72f82400-e166-11ea-8e5f-4d2d06786aea.jpeg" height="600">
+
+Then comes the second layer of copper foil (for the grounding). The foil just got applied onto the areas that have sensors underneath it. The following figure shows that.
+
+<img src="https://user-images.githubusercontent.com/44895720/90518132-a175ff00-e166-11ea-8f47-c509df9af933.jpeg" height="600">
+
+The last step was to pour the rest of the plaster and then let everything dry for a couple of days. After unmolding it turned out that parts of the nose and lips broke off so it is really important to get the thickness of the first layer just right.
+* When this layer is too thin it is later impossible to unmold the head properly because the layer will crack during the process or parts will break off.
+* If the layer is too thick the capacitive sensing will get problematic.
+
+A thickness of about 1-2 mm worked well except for the nose and lips parts. To solve this problem a few approaches got tried which will get explained later on.
+
+Other than the fact that some parts broke off the capacitive sensing worked well with this bust. One issue that emerged is that some of the sensors were not exactly placed at the locations where they should have been. This was due to the fact that once the first layer of plaster got poured the details in the mold can’t be seen as well anymore so placing the sensors down at particular locations is a bit of a challenge. This problem will get addressed later on.
+
+## Pre-study
+
