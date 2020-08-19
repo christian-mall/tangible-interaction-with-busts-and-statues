@@ -118,3 +118,35 @@ Other than the fact that some parts broke off the capacitive sensing worked well
 
 ## Pre-study
 
+After having found out what works best for casting a basic version of the interactive bust a pre-study got conducted. For this study a new bust got cast. This was just a basic plaster version of that bust that contained no sensors. One of the goals of this study was to find out where potential museum visitors would like to touch the statue to get which kind of information and also how they interact with the statue (tapping, swiping etc.). Another goal was to find out how to best convey to the visitors that certain parts of the bust are made for tangible interaction in the first place. The study itself is not discussed in this chapter. It will be explained in depth in the actual thesis. Instead, this chapter just focuses on the prototyping work that was being done during the pre-study phase and on the findings related the material plaster.
+
+Before the pre-study got conducted there had to be found a solution to be able to see on the bust where and how a participant touched it after he or she lifted the finger.
+
+* **Infrared camera:** The first idea was to use an infrared camera for that but when this approach got tested it turned out that it is not suitable for this use case because of numerous issues. One problem was that the temperature traces that the participant left onto the bust once he/she touched it quickly disappeared once the finger got lifted off of the surface. This was not a problem when the participant touched a part of the statue for a longer period of time but in this case the opposite problem came up: The residual heat was present way too long. Cooling these parts wouldn’t work because then it would be too cold on these parts. Also it would have been difficult to conduct the study over several days because ideally the ambient temperature would be constant all of the time so that the infrared camera can get properly calibrated to these exact conditions in order to deliver comparable results.
+* **UV colors/UV pigments:** The next idea was to use UV colors alongside a black light. The idea was that participants wear gloves and dip their fingers into a UV color prior to touching the bust. The issue with this approach was that the UV color couldn’t be removed from the bust afterwards even though the bust was treated with several layers of clear paint before. A better approach was to use UV pigments which got mixed with toothpaste. This mixture was easier to remove but not well enough. Once a few participants touched the statue the residual paint accumulated. The following figure shows how UV traces look like under a black light and on the top of the bust the problem with the residual paint can be seen.
+
+<img src="https://user-images.githubusercontent.com/44895720/90626977-ced0b480-e21b-11ea-8a86-4c77815b06fe.png" height="600">
+
+
+* **Water colors:** The final solution was to just use water colors. The participants wore gloves, dipped their fingers into water and then into the water color and then touched the statue. This approach worked well because the water color could easily be removed with a damp towel afterwards.
+
+The next task was to find out how to best take a picture of the statue after a participant interacted with it. The goal was that this picture gets always taken from the same position with the same angle so that multiple pictures could then be laid on top of each other and blended together in a graphics editor. The first step was to cut out a piece of wood in the shape of the head and then glue the bust onto that piece of wood. Additionally a camera mount for a tripod got screwed onto the backside of the wood so that the bust can be mounted onto a tripod (half of the participants interacted with the bust while it was mounted onto a tripod while the other half interacted with it while it was lying down on a table). Then multiple wooden brackets got cut into shape and screwed onto a wooden base plate so that the bust perfectly fit in between them (see following figure).
+
+<img src="https://user-images.githubusercontent.com/44895720/90627754-b1e8b100-e21c-11ea-901b-94a502f2b76d.jpeg" width="600">
+
+Lastly a contraption got built so that the smartphone which was used to take the picture could always be placed in the exact same location. The finished contraption can be seen on the following figure.
+
+<img src="https://user-images.githubusercontent.com/44895720/90627851-d93f7e00-e21c-11ea-905d-62db70a77f03.jpeg" height="600">
+
+Then the pre-study could be started. As previously stated the study is explained in the actual master thesis while this GitHub document just focuses on the prototyping and material work that was conducted. Based on topics regarding Ludwig's life which have been chosen by the author and based on where the participants touched the statue and also the way they touched it to get certain kinds on information the following decisions were made for the next prototype of the bust:
+
+* Tapping on the forehead –> Information regarding the foundation of the Glyptothek
+* Swiping across the lips –> Information regarding Ludwig’s wife
+* Swiping across the forehead –> Information regarding Ludwig’s poetry
+* Swiping across the nose –> Information regarding Ludwig’s business communication
+
+The following figure shows the exact parts marked in an image editor.
+
+<img src="https://user-images.githubusercontent.com/44895720/90652271-2a139e80-e23e-11ea-99e6-d67ce119e601.jpg" height="600">
+
+To mark these interactive parts the author decided to use color because this was the preferred method of the people who participated in the pre-study.
