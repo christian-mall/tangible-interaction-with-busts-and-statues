@@ -48,13 +48,13 @@ The final unmolded head can be seen in the next figure.
 
 As can be seen there are a few darker spots on it. This is from the spray that has been used and this is why on subsequent experiments less of the spray was used (until the author found out that such a spray is not even necessary).
 
-## 2. Capacitive Sensing
+## 2. Capacitive sensing
 
 This section will describe how the capacitive sensing capabilities have been built, what materials have been used etc.
 
-For this project the following two Arduinos got used for the programming:
+For this project the following two Arduinos got used for programming:
 
-* ARDUINO UNO REV3 (got used to implement the capacitive sensing)
+* ARDUINO UNO REV3 (was used to implement the capacitive sensing)
 * ARDUINO MEGA 2560 REV3 (was used for the prototype that involves RFID which will get explained later on)
 
 There’s a "Capacitive Sensing Library" for Arduino that can turn two or more Arduino pins into a capacitive sensor with the help of copper foils and resistors. These sensors can then sense the capacitance of the human body. There are also dedicated sensors available that can be bought but the approach with the copper foils offers two important advantages:
@@ -77,7 +77,7 @@ Because the capacitive signal is able to pass through various types of materials
 
 <img src="https://user-images.githubusercontent.com/44895720/90332690-4229ba80-dfbf-11ea-8b48-06e0c5690325.png" height="600">
 
-Here, a 1 MΩ transistor is connected across pins 4 and 2 and a wire connects pin 2 with the copper foil. The code for this very basic, simple setup can be found under "Codes/Capacitive_Sensor_Value.ino". The way this works is the following: The "CapacitiveSensor" method toggles the send pin (pin 4) to a new state and then waits for the receive pin (pin 2) to change to the same state. The value that gets reported in the end is in arbitrary units. For many applications it is not advisable to just touch the bare sensor. Instead it should be covered with an insulating material like paper or plastic to get values which are in a more useful range. In the case of this project this is automatically achieved since the sensor is covered by plaster. When the state of the send pin changes, the state of the receive pin eventually changes as well. This delay is determined by an RC time constant (R * C, where R is the resistor value and C is the capacitance at the receive pin, plus any additional capacitance which might come from the human body).
+Here, a 1 MΩ resistor is connected across pins 4 and 2 and a wire connects pin 2 with the copper foil. The code for this very basic, simple setup can be found under "Codes/Capacitive_Sensor_Value.ino". The way this works is the following: The "CapacitiveSensor" method toggles the send pin (pin 4) to a new state and then waits for the receive pin (pin 2) to change to the same state. The value that gets reported in the end is in arbitrary units. For many applications it is not advisable to just touch the bare sensor. Instead it should be covered with an insulating material like paper or plastic to get values which are in a more useful range. In the case of this project this is automatically achieved since the sensor is covered by plaster. When the state of the send pin changes, the state of the receive pin eventually changes as well. This delay is determined by an RC time constant (R * C, where R is the resistor value and C is the capacitance at the receive pin, plus any additional capacitance which might come from the human body).
 
 The first basic tests didn’t yet involve the process of embedding the capacitive sensors into the plaster. Instead they dealt with using these sensors under a plane of plaster. For this purpose multiple sheets of plaster have been cast with varying thicknesses to see if the capacitive signal would be able to pass through the plaster. The pads of copper foil were glued under the plaster. There was no additional glue necessary because the copper foil that was used already came glued onto a sheet of paper so it could be peeled off and glued onto the plaster. As expected the results were better the thinner the layer of plaster that covered the copper was. After this basic test went well the next step was to try to get the capacitive sensing to work when there are multiple sensors next to each other. Such a setup can be seen in the next figure where the sheet of plaster is approximately 1 cm thick.
 
@@ -87,11 +87,14 @@ This of course brings one major problem: The plaster layer on top of the copper 
 
 * The first one being again to make the plaster layer thinner.
 * Another way to make the sensors better discernible from one another is to place them as far apart from each other as possible.
-* And it also helps if the sensors aren’t too tiny. Making them a little big bigger can already make a huge difference. Coin-shaped sensors with a diameter of about 2.5 cm worked quite well.
+* And it also helps if the sensors aren’t too tiny. Making them a little bit bigger can already make a huge difference. Coin-shaped sensors with a diameter of about 2.5 cm worked quite well.
 * Another thing that got tested is whether it makes a difference if the sensor is touched on the non-glue side or on the glue side. The result was that it is better to touch it on the non-glue side because the glue apparently hinders the capacitive signal a bit but when put behind plaster the opposite is true. It is better if the foil gets properly glued onto the plaster so the direct contact is more important.
 * Another finding was that the resistors that are used make a huge difference on the quality of the readings. Too small and the signal spikes can’t be seen, too big and the whole system gets overly reactive. Then, even if someone gets near cables there are already huge signal spikes. A value that worked quite well for this particular scenario was 2 MΩ. There occur some signal spikes when the hand gets near the cables but this isn't too much of an issue because the signal spikes are larger when the actual sensors get touched and the cables also get placed behind the bust (this will get described more detailed later on).
 
-The next tests were to try to embed the copper foils into the plaster. This approach is much more difficult because the plaster now is not only on top of the foils but also behind which further amplifies the problem of the capacitive signal inadvertently spreading through the plaster. To improve the signal-to-noise ratio an experiment was conducted where two prototypes got compared. One simply had three capacitive sensors embedded into the plaster and the other one had the three capacitive sensors surrounded by another copper foil (with a thin gap in between). This copper foil got connected to a ground pin on the Arduino. This approach can be seen in the following figure.
+The next tests were to try to embed the copper foils into the plaster. This approach is much more difficult because the plaster now is not only on top of the foils but also behind which further amplifies the problem of the capacitive signal inadvertently spreading throughout the plaster. To improve the signal-to-noise ratio an experiment was conducted where two prototypes got compared.
+
+* One simply had three capacitive sensors embedded into the plaster.
+* The other one had the three capacitive sensors surrounded by another copper foil (with a thin gap in between). This copper foil got connected to a ground pin on the Arduino. This approach can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90509112-1b9f8700-e159-11ea-8a54-fb98fcc824ea.jpeg" width="600">
 
@@ -99,5 +102,8 @@ This is the backside of the setup (before the additional plaster got poured). Th
 
 <img src="https://user-images.githubusercontent.com/44895720/90509635-ed6e7700-e159-11ea-9079-f76818043c06.png" width="600">
 
-There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the cast out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
+There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
 
+## 3. Creation of the prototype of the interactive bust of Ludwig I.
+
+WIP
