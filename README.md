@@ -104,6 +104,10 @@ This is the backside of the setup (before the additional plaster got poured). Th
 
 There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
 
-## 3. Creation of the prototype of the interactive bust of Ludwig I.
+## 3. Creation of the prototype of the interactive bust of Ludwig I. ------ Work in progress!
 
-WIP
+In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to.
+
+### Step 1: Apply leveling agent on the inside of the silicone form
+
+...
