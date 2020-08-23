@@ -104,10 +104,29 @@ This is the backside of the setup (before the additional plaster got poured). Th
 
 There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
 
-## 3. Creation of the prototype of the interactive bust of Ludwig I. ------ Work in progress!
+## 3. Creation of the prototype of the interactive bust of Ludwig I.
 
 In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to.
 
-### Step 1: Apply leveling agent on the inside of the silicone form
+### Step 1: Preparation of the silicone mold
 
-...
+The first step was to prepare the silicone mold. While at first the author used some anti-sticking spray so that the dried plaster doesn't stick to the silicone the author later found out that this is not necessary because the silicone itself has a surface which makes sure that the plaster doesn't stick to it. But there's one product that improves the surface of the final bust a bit and that is a leveling agent. The specific product that got used is called "HINRISID Oberflächenentspanner auf Tensidbasis". When using it the surface of the bust gets a bit smoother because the plaster gets dispersed more evenly. To apply the product it is best when it gets mixed with a little bit of water and then applied onto the inside of the silicone mold using a brush. Then is has to dry for about 2 minutes and then one has to fan it dry. The author used some kitchen roll to dab dry the parts which had a bit of excess liquid.
+
+### Step 2: Apply the first layer of plaster
+
+Then some plaster got mixed with water (in a ration of 1.5:1). It is important to pour the plaster into the water and not vice versa to avoid any clumping. Then it has to be mixed together properly until smooth.
+
+**Notes about different types of plaster:** Something very important is that there are multiple types of plaster available. While a basic plaster which can be found in any hardware store works it doesn't yield the best results. Using gypseous alabaster brings three advantages: Firstly, it is easier to work with it since it cures more slowly. So once the plaster and the water get mixed together the amount of time when the plaster is viscous is much longer. Secondly, it becomes much harder. This helps with the structural integrity of the bust. And lastly, the color is different: While the basic plaster is a bit grayish, the gypseous alabaster is more white.
+
+Then the plaster got applied in a thin layer of about 1-2 mm thickness. It helps when the mold gets tilted around a bit and when a brush gets used to get the plaster into every nook and cranny of the silicone mold. It is very important that the first layer of plaster doesn't exhibit any holes.
+
+**Notes about the thickness of the plaster:** It makes a huge difference how thick this first layer is. It is important to make it as thin as possible because that helps with the capacitive sensing but when making it too thin the risk is that parts of the bust break off during the unmolding process. When making the layer too thick the capacitance can't properly get through the layer later on. A thickness of about 1-2 mm works best.
+
+Before the plaster dried the author used some gauze and pressed it into the parts of the nose and lips. The reason is that the first prototypes exhibited some structural weaknesses in these areas and the gauze helps to add some more stability to these parts. There are a few things to note:
+* The gauze must not pressed down into the plaster too hard. Otherwise it will be seen on the outside of the bust later on. It just has to be gently pressed into the viscous plaster
+* It is possible to also use other materials which give additional structural strength (like polymer fibers or a fiberglass cloth) but the gauze soaks up the plaster a bit which is why this material is superiour to the other options since this means that it does a better job of giving additional strength to the outer layer.
+
+The result of this step can be seen in the folliwing picture.
+
+<img src="https://user-images.githubusercontent.com/44895720/90979216-f3969600-e553-11ea-9ac6-b886fd5458d9.jpg" height="600">
+
