@@ -124,9 +124,20 @@ Then the plaster got applied in a thin layer of about 1-2 mm thickness. It helps
 
 Before the plaster dried the author used some gauze and pressed it into the parts of the nose and lips. The reason is that the first prototypes exhibited some structural weaknesses in these areas and the gauze helps to add some more stability to these parts. There are a few things to note:
 * The gauze must not pressed down into the plaster too hard. Otherwise it will be seen on the outside of the bust later on. It just has to be gently pressed into the viscous plaster
-* It is possible to also use other materials which give additional structural strength (like polymer fibers or a fiberglass cloth) but the gauze soaks up the plaster a bit which is why this material is superiour to the other options since this means that it does a better job of giving additional strength to the outer layer.
+* It is possible to also use other materials which give additional structural strength (like polymer fibers or a fiberglass cloth) but the gauze soaks up the plaster a bit which is why this material is superior to the other options since this means that it does a better job of giving additional strength to the outer layer.
 
-The result of this step can be seen in the folliwing picture.
+Then the plaster has to dry. It is best to let the plaster dry at least overnight. The result of this step can be seen in the following picture.
 
 <img src="https://user-images.githubusercontent.com/44895720/90979216-f3969600-e553-11ea-9ac6-b886fd5458d9.jpg" height="600">
 
+### Step 3: Adding the sensors
+
+The next step was to add the sensors. The author decided to use copper foil for this. The foil came pre-glued onto paper so it could be peeled off and then glued onto the dried plaster. It is important that the sensors aren't too small. Otherwise the capacitive sensing will get problematic later on. Coin-shaped sensors with a diameter of about 2.5 cm worked well. It has to be ensured that the sensors have good contact with the plaster. This can be a bit challenging on very curved surfaces like on the nose but a few cuts with a scissor help the copper foil to adhere to the surface of the plaster. The sensors on the hair part are deliberately bigger because there the goal was that is doesn't matter where exactly the user touches the bust. Lastly, some wires needed to be soldered to the sensors. The following picture shows the result of this step.
+
+<img src="https://user-images.githubusercontent.com/44895720/90979719-50e01680-e557-11ea-9ca2-efe19886f93d.jpg" height="600">
+
+### Step 4: Adding the hot glue
+
+Then follows the isolating layer. The author chose to use hot glue for this purpose. The hot glue doesn't need to be applied everywhere but just on a rectangle that covers all of the sensors. It would propably be even enough when just the sensors get covered altouth this did not explicitely get tested. During this step one has to pay attention that every part of the sensor is covered so that there are no holes in the hot glue layer. Otherwise there can be a short circuit later on due to the grounding layer (that now follows) being in contact with the sensors. The result of this step can be seen in the following figure.
+
+<img src="https://user-images.githubusercontent.com/44895720/90979736-6f461200-e557-11ea-9d59-ec8756725c11.jpg" height="600">
