@@ -102,17 +102,30 @@ This is the backside of the setup (before the additional plaster got poured). Th
 
 <img src="https://user-images.githubusercontent.com/44895720/90509635-ed6e7700-e159-11ea-9079-f76818043c06.png" width="600">
 
-There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. These are issues that got addressed later on.
+There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom layer is the thin layer that gets applied onto the silicone mold. After that follows the copper foil that acts as the capacitive sensor. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. This is why the author decided to use a different solution for this project. The solution that was found was to use the "Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121". As the name suggests it supports up to 12 individual touch pads. The MPR121 chip handles filtering and can also be configured to be more or less sensible. The following figure shows how this touch sensor gets connected to the Arduino.
+
+<img src="https://user-images.githubusercontent.com/44895720/90981707-e2a15100-e562-11ea-84c9-8a61558dca98.png" height="600">
+
+To be able to program the sensor there is the "Adafruit_MPR121" library that has to be installed. There is a basic program under "Codes/Capacitive_Sensors_MPR121.ino" which outputs which sensor has been touched and released in the serial monitor. The way it works is that this code keeps track of the 12 "bits" for each touch. The sensor measures the capacitance with "counts". There’s a baseline count number which depends on different factors like the temperature or the humidity. When the number changes a significant amount it is considered as a touch or release. To be precise, each sensor has two values: The aforementioned base value ("cap.baselineData(i)") and the current filtered data reading ("cap.filteredData(i)") (i goes from 0 to 11). When the current reading is within 12 counts of the baseline value it is considered that the sensor is not touched. When the reading is more than 12 counts smaller than the baseline value a touch gets reported. There’s also the possibility to see if a particular sensor is touched (e. g. sensor #4: "if (cap.touched() & (1 « 4)) { do something })". There are also commands to get the baseline and filtered data of each sensor ("filteredData(sensornumber);" respectively "baselineData(sensornumber);"). And lastly, there’s also the possibility to change the thresholds for touch detection but just for all sensors globally. Compared with the previous approach that didn’t involve this dedicated touch sensing chip there are two things to note:
+
+* Whereas the sensor values changed quite a bit when they were touched versus when they were not touched when using the Capacitive Sensing library for the Arduino (e. g. 90 versus almost 0) this is not the case at all when using the MPR121 sensor. The spread is much tighter. Common values when a sensor is not touched is around 120 and when it is touched the value goes down to around 110. Of course these values can be much different in other applications but these are some typical values that the author encountered for this particular usage scenario. The fact that the spread is so tight first raised some concerns because as seen earlier when having multiple sensors next to each other embedded into the plaster the problem occurs that there’s not only a signal spike recorded for the sensors that indeed got touched but also on the adjacent ones (albeit not as big). Of course one would think that a bigger spread in the values makes it easier to discern which sensor got touched. However, it turned out that a huge advantage of the MPR121 sensor is that when one sensor gets touched no change occurs in the value of the adjacent sensors. This makes it possible to easily discern which sensor has been touched even though the change in values is so small.
+* The former approach with the Capacitive Sensing library worked but it worked a bit un- reliably. As seen earlier while readings were fine most of the time small movements of the cables sometimes caused problems so that the sensor values weren’t usable anymore. One also had to pay attention so that the cables don’t touch one another because when they do this sometimes caused problems. These are all problems that vanished when using the MPR121. The whole system was much more stable than previously and even when all of the cables were muddled and touched each other the sensor values remained solid.
 
 ## 3. Creation of the prototype of the interactive bust of Ludwig I.
 
 In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to.
 
-### Step 1: Preparation of the silicone mold
+### Step 1: Mark the positions of the sensors
+
+This first step is sort of a pre-step to the actual creation of the bust. Depending on the specific needs for the project it is not absolutely necessary. When the exact placement of the sensors is not really crucial one can omit this step. But in this particular project the exact placement is very important. The reason why it is then necessary to mark the positions of the sensors beforehand is the following: Once the first layer of plaster gets poured the small details in the silicone mold can't be properly seen anymore. The solution that was found involves a laser pointer mounted on a wooden plank. A wooden plank was cut and a hole got drilled inside of it so that a laser pointer could fit into it. Then this plank got placed on top of the silicone mold and moved around to the different spots so that at each position the laser pointer pointed at the exact position where a copper pad should be. Then the respective positions got marked on the plank and also on the silicone mold. This can be seen in the following figure.
+
+<img src="https://user-images.githubusercontent.com/44895720/90980971-a66bf180-e55e-11ea-9e1a-79c73a982089.jpeg" height="600">
+
+### Step 2: Preparation of the silicone mold
 
 The first step was to prepare the silicone mold. While at first the author used some anti-sticking spray so that the dried plaster doesn't stick to the silicone the author later found out that this is not necessary because the silicone itself has a surface which makes sure that the plaster doesn't stick to it. But there's one product that improves the surface of the final bust a bit and that is a leveling agent. The specific product that got used is called "HINRISID Oberflächenentspanner auf Tensidbasis". When using it the surface of the bust gets a bit smoother because the plaster gets dispersed more evenly. To apply the product it is best when it gets mixed with a little bit of water and then applied onto the inside of the silicone mold using a brush. Then is has to dry for about 2 minutes and then one has to fan it dry. The author used some kitchen roll to dab dry the parts which had a bit of excess liquid.
 
-### Step 2: Apply the first layer of plaster
+### Step 3: Apply the first layer of plaster
 
 Then some plaster got mixed with water (in a ration of 1.5:1). It is important to pour the plaster into the water and not vice versa to avoid any clumping. Then it has to be mixed together properly until smooth.
 
@@ -123,45 +136,53 @@ Then the plaster got applied in a thin layer of about 1-2 mm thickness. It helps
 **Notes about the thickness of the plaster:** It makes a huge difference how thick this first layer is. It is important to make it as thin as possible because that helps with the capacitive sensing but when making it too thin the risk is that parts of the bust break off during the unmolding process. When making the layer too thick the capacitance can't properly get through the layer later on. A thickness of about 1-2 mm works best.
 
 Before the plaster dried the author used some gauze and pressed it into the parts of the nose and lips. The reason is that the first prototypes exhibited some structural weaknesses in these areas and the gauze helps to add some more stability to these parts. There are a few things to note:
-* The gauze must not pressed down into the plaster too hard. Otherwise it will be seen on the outside of the bust later on. It just has to be gently pressed into the viscous plaster
+* The gauze must not be pressed down into the plaster too hard. Otherwise it will be seen on the outside of the bust later on. It just has to be gently pressed into the viscous plaster
 * It is possible to also use other materials which give additional structural strength (like polymer fibers or a fiberglass cloth) but the gauze soaks up the plaster a bit which is why this material is superior to the other options since this means that it does a better job of giving additional strength to the outer layer.
 
-Then the plaster has to dry. It is best to let the plaster dry at least overnight. The result of this step can be seen in the following picture.
+Then the plaster has to dry. It is best to let the plaster dry at least overnight. The result of this step can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90979216-f3969600-e553-11ea-9ac6-b886fd5458d9.jpg" height="600">
 
-### Step 3: Adding the sensors
+### Step 4: Adding the sensors
 
-The next step was to add the sensors. The author decided to use copper foil for this. The foil came pre-glued onto paper so it could be peeled off and then glued onto the dried plaster. It is important that the sensors aren't too small. Otherwise the capacitive sensing will get problematic later on. Coin-shaped sensors with a diameter of about 2.5 cm worked well. It has to be ensured that the sensors have good contact with the plaster. This can be a bit challenging on very curved surfaces like on the nose but a few cuts with a scissor help the copper foil to adhere to the surface of the plaster. The sensors on the hair part are deliberately bigger because there the goal was that is doesn't matter where exactly the user touches the bust. Lastly, some wires needed to be soldered to the sensors. The following picture shows the result of this step.
+The next step was to add the sensors. The author decided to use copper foil for this. The foil came pre-glued onto paper so it could be peeled off and then glued onto the dried plaster. In order to be sure that the sensors get placed at the exact location where they should be the trick with the laser pointer got used. It is important that the sensors aren't too small. Otherwise the capacitive sensing will get problematic later on. Coin-shaped sensors with a diameter of about 2.5 cm worked well. It has to be ensured that the sensors have good contact with the plaster. This can be a bit challenging on very curved surfaces like on the nose but a few cuts with a scissor help the copper foil to adhere to the surface of the plaster. The sensors on the hair part are deliberately bigger because there the goal was that is doesn't matter where exactly the user touches the bust. Lastly, some wires needed to be soldered to the sensors. The following figure shows the result of this step.
 
 <img src="https://user-images.githubusercontent.com/44895720/90979719-50e01680-e557-11ea-9ca2-efe19886f93d.jpg" height="600">
 
-### Step 4: Adding the hot glue
+### Step 5: Adding the hot glue
 
-Then follows the isolating layer. The author chose to use hot glue for this purpose. The hot glue doesn't need to be applied everywhere but just on a rectangle that covers all of the sensors. It would propably be even enough when just the sensors get covered altouth this did not explicitely get tested. During this step one has to pay attention that every part of the sensor is covered so that there are no holes in the hot glue layer. Otherwise there can be a short circuit later on due to the grounding layer (that now follows) being in contact with the sensors. The result of this step can be seen in the following figure.
+Then follows the isolating layer. The author chose to use hot glue for this purpose. The hot glue doesn't need to be applied everywhere but just on a rectangle that covers all of the sensors. It would propably be even enough when just the sensors get covered although this did not explicitely get tested. During this step one has to pay attention that every part of the sensors is covered so that there are no holes in the hot glue layer. Otherwise there can be a short circuit later on due to the grounding layer (that now follows) being in contact with the sensors. The result of this step can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90979736-6f461200-e557-11ea-9d59-ec8756725c11.jpg" height="600">
 
-### Step 5: Adding the grounding layer
+### Step 6: Adding the grounding layer
 
-The next step is to add the grounding layer. Again, the author chose the copper foil for that. The grounding layer is important to improve the results of the capacitive sensing. As with the hot glue, the grounding foil got applied in a rectangle that coveres all sensors. Then a cable needs to be soldered to this layer. The next figure shows the result of this step. Note: The picture got taken before this wire got added.
+The next step is to add the grounding layer. Again, the author chose the copper foil for that. The grounding layer is important to improve the results of the capacitive sensing. As with the hot glue, the grounding foil got applied in a rectangle that covers all sensors. Then a cable needs to be soldered to this layer. The next figure shows the result of this step. Note: The picture got taken before this wire got added.
 
 <img src="https://user-images.githubusercontent.com/44895720/90979905-4eca8780-e558-11ea-9270-7024f56e728f.jpg" height="600">
 
-### Step 6: Adding the Moltofill
+### Step 7: Adding the Moltofill
 
 This is a step that is not absolutely necessary but it is best to do. This step involves applying a layer of Moltofill. The reason is the following: Liquid plaster doesn't combine well with already cured plaster and it also expands when drying so the problem is that the second plaster layer might cause the first one to crack a bit because it expands a little bit. So the idea is to apply a thin layer of Moltofill before applying the second plaster layer. The Moltofill should be slightly dried but not all the way before the second plaster layer gets poured so that it combines well. The following figure shows the result after adding the Moltofill and letting it slightly dry.
 
 <img src="https://user-images.githubusercontent.com/44895720/90980025-1d9e8700-e559-11ea-8cb6-1be0be3214f3.jpg" height="600">
 
-### Step 7: Adding the last layer of plaster
+### Step 8: Adding the last layer of plaster
 
 The last step regarding the creation of the bust itself is to add the second layer of plaster. This layer can basically be as thick as one wants to give enough structural stability to the bust. The next figure shows the result.
 
 <img src="https://user-images.githubusercontent.com/44895720/90980130-cb119a80-e559-11ea-85d0-3b55a79fdc10.jpg" height="600">
 
-### Step 8: Unmolding
+### Step 9: Unmolding
 
 Before unmolding the bust it is best to let it cure for a couple of days. The resulting bust can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90980165-09a75500-e55a-11ea-8721-b6d557fc9c75.jpg" height="600">
+
+### Step 10: Marking the interactive parts on the outside of the bust
+
+This is an optional step but the author decided to mark the interactive parts on the outside of the bust because it was important in the scope of the master thesis. There are multiple ways to mark interactive parts on the bust:
+
+* **Colored markings:** The easiest way is to use colored markings. This can be achieved by just using water color and apply the color onto the outside of the bust using either a brush or a finger. The only thing one has to pay attention to is that the brush/finger is not too wet when applying the color. Otherwise the color runs off ruining the bust. An alternative way to get colored markings is to make the plaster itself colored on certain parts in step 3 by mixing one batch with wall color so that one has two batches: The normal plaster and the colored one. The issue is that this makes it way harder when trying to evenly distribute the plaster to get the thin first layer because one has to pay attention to not inadvertendly mixing these two parts.
+* **Structural markings:** Another possibility is to use some kind of structural marking. The author tried out a lot of different approaches for this and in the end found one that works well. The author decided to use a joint tape for this. The way this works is the following: The self-adhesive joint tape got placed onto the interactive parts. Then a very small amount of additional plaster got smeared onto these parts. Then, after the plaster was slightly dry but not dried all the way, the joint tape got removed, leaving behind a checkered structural marking.
+* **Markings with cloths:** Another option is to use a cloth to create some markings. The author decided to do this with felt. This way of highlighting is obviously way more explicit which might not be fitting for one's particular usage scenario.
