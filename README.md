@@ -187,6 +187,10 @@ This is an optional step but the author decided to mark the interactive parts on
 * **Structural markings:** Another possibility is to use some kind of structural marking. The author tried out a lot of different approaches for this and in the end found one that works well. The author decided to use a joint tape for this. The way this works is the following: The self-adhesive joint tape got placed onto the interactive parts. Then a very small amount of additional plaster got smeared onto these parts. Then, after the plaster was slightly dry but not dried all the way, the joint tape got removed, leaving behind a checkered structural marking.
 * **Markings with cloths:** Another option is to use a cloth to create some markings. The author decided to do this with felt. This way of highlighting is obviously way more explicit which might not be fitting for one's particular usage scenario.
 
+The following figure shows all of these three resulting busts alongside the original plaster bust which got provided by the Staatliche Antikensammlung München.
+
+<img src="https://user-images.githubusercontent.com/44895720/90982668-eb952100-e568-11ea-9ef4-73038cea1cec.jpeg" width="600">
+
 ### Step 11: Mounting the bust
 
 This is another optional step but for the thesis the author decided to mount the bust onto a box to properly display it. The first goal was that users can comfortably interact with the bust and the second goal was that all of the electronic parts could be hidden so that users don’t see any cables etc. hanging around. The solution was to build a wooden box which can be seen in the following figure.
