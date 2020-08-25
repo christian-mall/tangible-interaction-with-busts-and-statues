@@ -13,7 +13,7 @@ This readme will contain a summary of the prototyping work that was done for the
 
 ## 1. Silicone mold from the bust of Ludwig I. and basic plaster castings
 
-In this section it will be described gradually how a silicone mold was created from the original Ludwig bust from the Staatliche Antikensammlung and how it was used to make further plaster castings.
+In this section it will be described gradually how a silicone mold was created from the original Ludwig bust from the Staatliche Antikensammlungen and how it was used to make further plaster castings.
 
 The first step was to cut out a base plate (in this case made out of wood) where the head can rest on. In order to fixate the head onto the board and to prevent any silicone from leaking under the head before it fully cures Plasticine (a sort of modeling clay) was used. In order for it to be malleable it was put in the microwave for a short period of time which made working with it way easier. Then the clay was used to seal all of the crevices between the head and the base plate (see figure below).
 
@@ -223,7 +223,7 @@ This is an optional step but the author decided to mark the interactive parts on
 * **Structural markings:** Another possibility is to use some kind of structural marking. The author tried out a lot of different approaches for this and in the end found one that works well. The author decided to use a joint tape for this. The way this works is the following: The self-adhesive joint tape got placed onto the interactive parts. Then a very small amount of additional plaster got smeared onto these parts. Then, after the plaster was slightly dry but not dried all the way, the joint tape got removed, leaving behind a checkered structural marking.
 * **Markings with cloths:** Another option is to use a cloth to create some markings. The author decided to do this with felt. This way of highlighting is obviously way more explicit which might not be fitting for one's particular usage scenario.
 
-The following figure shows all of these three resulting busts alongside the original plaster bust which got provided by the Staatliche Antikensammlung München.
+The following figure shows all of these three resulting busts alongside the original plaster bust which got provided by the Staatliche Antikensammlungen München.
 
 <img src="https://user-images.githubusercontent.com/44895720/90982668-eb952100-e568-11ea-9ef4-73038cea1cec.jpeg" width="600">
 
