@@ -151,7 +151,7 @@ Additionally, the idea was to also present content in a different way when a use
 
 ## 5. Creation of the prototype of the interactive bust of Ludwig I.
 
-In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to.
+In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to. The final code for this prototype can be found under "Codes/FINAL_Capacitive_CalibratedV3_IMAGE.ino".
 
 ### Step 1: Mark the positions of the sensors
 
@@ -239,7 +239,7 @@ The idea is that the bust gets placed on the right hand side while all of the ca
 
 ## 6. Creation of the prototypes of the interactive miniature statues
 
-In this chapter it will be described how the final prototypes of the interactive miniature statues were created. But first, some general info. The first question that needed to be addressed is how these smaller statues could be made interactive in a way that would be fun and engaging for the users. Because they are much smaller than the original bust, working with capacitive sensors is not really a solution because they can't be so small that they could be used in this scenario. Also it probably wouldn't be a fun experience for the users to e. g. interact with different parts of a face on such a small scale.
+In this chapter it will be described how the final prototypes of the interactive miniature statues were created. The final code for these prototypes can be found under "Codes/FINAL_RFID.ino". But first, some general info. The first question that needed to be addressed is how these smaller statues could be made interactive in a way that would be fun and engaging for the users. Because they are much smaller than the original bust, working with capacitive sensors is not really a solution because they can't be so small that they could be used in this scenario. Also it probably wouldn't be a fun experience for the users to e. g. interact with different parts of a face on such a small scale.
 
 So the idea was to work with "radio-frequency identification" (RFID). In the past this technology mainly got used for identifying animals, anti-theft devices or admission control but the areas of application get bigger and bigger. RFID systems are widely available also for private use. In the following, the basics of this technology will get described. A typical RFID system consists of three components:
 
