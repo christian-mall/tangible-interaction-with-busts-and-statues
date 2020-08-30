@@ -32,7 +32,7 @@ long timeTouchedLipLeft = 0;
 long timeTouchedLipRight = 0;
 long timeTouchedUpperLock = 0;
 long timeTouchedLowerLock = 0;
-int maxInterval = 1000;
+int maxInterval = 2000;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
