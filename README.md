@@ -101,7 +101,7 @@ The next tests were to try to embed the copper foils into the plaster. This appr
 
 <img src="https://user-images.githubusercontent.com/44895720/90509112-1b9f8700-e159-11ea-8a54-fb98fcc824ea.jpeg" width="600">
 
-This is the backside of the setup (before the additional plaster got poured). This additional grounding made the readings better. Then this approach got further refined. Instead of placing an additional copper foil around the sensors the additional copper foil simply got put behind the sensors. In order to avoid any shortages a layer of hot glue which acts as an isolating layer was used. A schematic drawing of this approach (using one sensor) can be seen in the next figure.
+This is the backside of the setup (before the additional plaster got poured). This additional grounding made the readings better. Then this approach got further refined. Instead of placing an additional copper foil around the sensors the additional copper foil simply got put behind the sensors. In order to avoid any short circuit a layer of hot glue which acts as an isolating layer was used. A schematic drawing of this approach (using one sensor) can be seen in the next figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90509635-ed6e7700-e159-11ea-9079-f76818043c06.png" width="600">
 
