@@ -212,15 +212,15 @@ The last step regarding the creation of the bust itself is to add the second lay
 
 <img src="https://user-images.githubusercontent.com/44895720/90980130-cb119a80-e559-11ea-85d0-3b55a79fdc10.jpg" height="600">
 
+The next figure shows an updated version of the schematic drawing from earlier. For this example, just two sensors are shown. The left one has a layer of gauze under it to give more stability while the right one is just left as is. It can also be seen that the layer of Moltofill got added to the drawing. This is the layer under the second plaster layer.
+
+<img src="https://user-images.githubusercontent.com/44895720/93202286-bbe5cd00-f752-11ea-918c-a16a37363d3e.png" width="600">
+
 ### Step 9: Unmolding
 
 Before unmolding the bust it is best to let it cure for a couple of days. Even then the outside is slightly damp. This is why it is advised to give the bust another 1-2 days after unmolding to fully dry out. The resulting bust can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90980165-09a75500-e55a-11ea-8721-b6d557fc9c75.jpg" height="600">
-
-The next figure shows an updated version of the schematic drawing from earlier. For this example, just two sensors are shown. The left one has a layer of gauze under it to give more stability while the right one is just left as is. It can also be seen that the layer of Moltofill got added to the drawing. This is the layer under the second plaster layer.
-
-<img src="https://user-images.githubusercontent.com/44895720/93202286-bbe5cd00-f752-11ea-918c-a16a37363d3e.png" width="600">
 
 ### Step 10: Marking the interactive parts on the outside of the bust
 
