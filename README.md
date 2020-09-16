@@ -291,3 +291,7 @@ King and queen Playmobil figures got used as miniature statues which should repr
 As with the interactive bust the idea was that once a museum visitor interacts with one of the statues an audio recording plays so another "DFPlayer Mini MP3 Player For Arduino" got used for this purpose. So the next step was to record these two audio recordings (the same procedure as for the bust). The full texts can be found in the master thesis.
 
 The e-paper display did not get used for this particular application. For display purposes the wooden box got used again. As can be seen in the previous figure where the wooden box was shown three storing positions got built on top of the box. The left and right ones are for the miniature statues while the middle one contains the RFID reader which is hidden underneath the wooden base. When the king figure gets placed into the middle position which got marked with blue color the audio recording narrating some information regarding Ludwig I. gets played and when the queen figure gets placed there the audio recording narrating information regarding Therese gets played.
+
+The following figure shows the back side of the wooden box with a few annotations regarding the different parts of the setup.
+
+<img src="https://user-images.githubusercontent.com/44895720/93354156-ffb50100-f83c-11ea-9abe-4ba9bfd1102c.jpeg" height="600">
