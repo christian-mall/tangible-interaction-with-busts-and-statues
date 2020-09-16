@@ -238,9 +238,13 @@ The following figure shows all of these three resulting busts alongside the orig
 
 This is another optional step but for the thesis the author decided to mount the bust onto a box to properly display it. The first goal was that users can comfortably interact with the bust and the second goal was that all of the electronic parts could be hidden so that users don’t see any cables etc. hanging around. The solution was to build a wooden box which can be seen in the following figure.
 
-<img src="https://user-images.githubusercontent.com/44895720/90982442-6bba8700-e567-11ea-9b51-36e4356d1be5.jpeg" width="600">
+<img src="https://user-images.githubusercontent.com/44895720/93352085-bfed1a00-f83a-11ea-9cc6-f322bd1e2669.jpeg" width="600">
 
 The idea is that the bust gets placed on the right hand side while all of the cables get fed through the two bigger holes on the right. Through the wooden board that got attached to the back side of the bust with tile adhesive it can be mounted onto the slated board using the small hole that got drilled inside of it and with the help of a screw. On the left hand side the e-paper display gets placed and the cables can be routed to the back side of the box through a hole that has been cut into the slated board. This made it possible to neatly display the bust for users who can then easily interact with it.
+
+The following figure shows the back side of the wooden box with a few annotations regarding the different parts of the setup.
+
+<img src="https://user-images.githubusercontent.com/44895720/93350551-0e011e00-f839-11ea-82cd-499829e33fb6.jpeg" width="600">
 
 ## 6. Creation of the prototypes of the interactive miniature statues
 
