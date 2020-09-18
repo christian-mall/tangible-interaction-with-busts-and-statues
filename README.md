@@ -224,7 +224,7 @@ The next figure shows an updated version of the schematic drawing from earlier. 
 
 ### Step 9: Unmolding
 
-Before unmolding the bust it is best to let it cure for a couple of days. Even then the outside is slightly damp. This is why it is advised to give the bust another 1-2 days after unmolding to fully dry out. The resulting bust can be seen in the following figure.
+Before unmolding the bust it is best to let it cure for a couple of days. Even then the outside is slightly damp. This is why it is advised to give the bust another 1-2 days after unmolding to dry out more. The resulting bust can be seen in the following figure.
 
 <img src="https://user-images.githubusercontent.com/44895720/90980165-09a75500-e55a-11ea-8721-b6d557fc9c75.jpg" height="600">
 
