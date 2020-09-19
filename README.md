@@ -56,8 +56,8 @@ This section will describe how the capacitive sensing capabilities have been bui
 
 For this project the following two Arduinos got used for programming:
 
-* ARDUINO UNO REV3 (was used to implement the capacitive sensing; got powered through a Laptop via USB)
-* ARDUINO MEGA 2560 REV3 (was used for the prototypes that involve RFID which will get explained later on; got powered with a USB power supply)
+* "ARDUINO UNO REV3" (was used to implement the capacitive sensing; got powered through a Laptop via USB)
+* "ARDUINO MEGA 2560 REV3" (was used for the prototypes that involve RFID which will get explained later on; got powered with a USB power supply)
 
 There’s a "Capacitive Sensing Library" for Arduino that can turn two or more Arduino pins into a capacitive sensor with the help of copper foils and resistors. These sensors can then sense the capacitance of the human body. There are also dedicated sensors available that can be bought but the approach with the copper foils offers two important advantages:
 
