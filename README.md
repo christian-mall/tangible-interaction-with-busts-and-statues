@@ -156,7 +156,7 @@ Additionally, the idea was to also present content in a different way when a use
 
 ## 5. Creation of the prototype of the interactive bust of Ludwig I.
 
-In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside some tips will be shared as well as things to pay attention to. The final code for this prototype can be found under "Codes/FINAL_Capacitive_CalibratedV3_IMAGE.ino".
+In this chapter it will be described step-by-step how the final prototype of the interactive bust of Ludwig I. was created. Alongside, some tips will be shared as well as things to pay attention to. The final code for this prototype can be found under "Codes/FINAL_Capacitive_CalibratedV3_IMAGE.ino".
 
 ### Step 1: Mark the positions of the sensors
 
