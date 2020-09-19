@@ -260,9 +260,9 @@ In this chapter it will be described how the final prototypes of the interactive
 
 So the idea was to work with "radio-frequency identification" (RFID). In the past, this technology mainly got used for identifying animals, anti-theft devices or admission control but the areas of application get bigger and bigger. RFID systems are widely available also for private use. In the following, the basics of this technology will get described. A typical RFID system consists of three components:
 
-* A computer
-* A reader with a coupling unit (coil, antenna)
-* An RFID transponder
+* a computer
+* a reader with a coupling unit (coil, antenna)
+* an RFID transponder
 
 How these components interact with each other can be seen in the following figure.
 
@@ -270,11 +270,11 @@ How these components interact with each other can be seen in the following figur
 
 The reader which is connected to a PC via a serial connection or network connection can serve either as a pure reader or a writer/reader device. The application that is running on the PC sends commands and data to the reader and gets data back from the reader. These commands can e. g. be the readout of all of the ID numbers from the transponders within the reading range or to write data onto the transponder. The reader then encodes these commands and modulates them onto a magnetic or electromagnetic alternating field. This alternating field additionally serves the purpose of providing the transponders with energy (this is the case for passive transponders; there are also active transponders which have their own power supply). All transponders which are within the field of the reader receive the transmitted commands and data and send their individual answers back to the reader. Typically, a transponder consists of a microchip and a coupling unit. This coupling unit can either be a coil or an antenna.
 
-The products that were used in this project are
+The products that were used in this project are:
 
 * an "ARDUINO MEGA 2560 REV3"
 * the "RFID-RC522" as the reader
-* simple plastic transponders which contain a coil.
+* simple plastic transponders which contain a coil
 
 The next step was to connect the reader to the Arduino. The following figure shows the wiring diagram.
 
