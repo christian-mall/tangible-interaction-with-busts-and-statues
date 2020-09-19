@@ -68,12 +68,12 @@ The following figure shows how such pieces of copper foil can look like.
 
 <img src="https://user-images.githubusercontent.com/44895720/90331894-82d20580-dfb8-11ea-8128-0a94e7270aa5.jpeg" width="600">
 
-The most basic setup for one capacitive sensor just involves
+The most basic setup for one capacitive sensor just involves:
 
-* the Arduino
-* a resistor (medium to high)
-* a piece of foil (e. g. copper or aluminum)
-* a wire
+* The Arduino
+* A resistor (medium to high)
+* A piece of foil (e. g. copper or aluminum)
+* A wire
 
 Because the capacitive signal is able to pass through various types of materials (including plastic, wood, or in this case plaster) the sensors are invisible in the end because they get placed behind the respective material. The following figure shows a very basic setup with one capacitive sensor (copper foil).
 
