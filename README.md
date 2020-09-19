@@ -23,12 +23,12 @@ The next step was to build a wooden case around the bust to build a vessel for t
 
 <img src="https://user-images.githubusercontent.com/44895720/90312425-a5a2e200-df04-11ea-916f-551afaf232df.jpeg" height="600">
 
-The silicone that was used is a SF33 - RTV2 silicone. This type of silicone is milky-transparent, very durable and heat-resistant. It’s a silicone that is made for making silicone molds and it consists of two parts:
+The silicone that was used is a "SF33 - RTV2" silicone. This type of silicone is milky-transparent, very durable and heat-resistant. It’s a silicone that is made for making silicone molds and it consists of two parts:
 
 * a base
 * a catalyst
 
-Once these two parts are properly mixed in a 1:1 ratio the silicone cures in around 3 hours at room temperature. Higher temperatures speed up the curing process. Normal silicone needs air to cure which would have been problematic here because the final mold is quite thick. The "SF33" means that its Shore hardness is "33" so it’s medium-hard. For this project 10 kg of silicone were used. But before the silicone got poured inside the vessel an anti-sticking spray (Achem SG-1008S) was used to spray a thin layer onto the bust. This is important so that the silicone doesn't stick afterwards. After the spray was dried (it forms a waxy layer) a thin layer of the silicone was applied on the whole bust by using a small brush. This way it is ensured that there get no air bubbles trapped in between the plaster and the silicone. Then the rest of the silicone got poured inside the vessel. The following figure shows the silicone mold once it was cured.
+Once these two parts are properly mixed in a 1:1 ratio the silicone cures in around 3 hours at room temperature. Higher temperatures speed up the curing process. Normal silicone needs air to cure which would have been problematic here because the final mold is quite thick. The "SF33" means that its Shore hardness is "33" so it’s medium-hard. For this project 10 kg of silicone were used. But before the silicone got poured inside the vessel an anti-sticking spray ("Achem SG-1008S") was used to spray a thin layer onto the bust. This is important so that the silicone doesn't stick afterwards. After the spray was dried (it forms a waxy layer) a thin layer of the silicone was applied on the whole bust by using a small brush. This way it is ensured that there get no air bubbles trapped in between the plaster and the silicone. Then the rest of the silicone got poured inside the vessel. The following figure shows the silicone mold once it was cured.
 
 <img src="https://user-images.githubusercontent.com/44895720/90312479-14803b00-df05-11ea-9f67-daea6af736c2.jpeg" width="600">
 
