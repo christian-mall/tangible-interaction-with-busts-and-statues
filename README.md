@@ -1,6 +1,6 @@
 # Tangible Interaction with Busts and Statues
 
-This readme will contain a summary of the prototyping work that was done for the master thesis to create the prototypes of the plaster bust of Ludwig I. as well as the miniature statues. Alongside all of the findings of the author regarding things that one has to pay attention to as well as some dos and don'ts will be shared.
+This readme will contain a summary of the prototyping work that was done for the master thesis to create the prototypes of the plaster bust of Ludwig I. as well as the miniature statues. Alongside, all of the findings of the author regarding things that one has to pay attention to as well as some dos and don'ts will be shared.
 
 ## Table of contents
 
