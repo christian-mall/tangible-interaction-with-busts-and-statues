@@ -142,7 +142,7 @@ The topics have been chosen by the author but what interaction triggers what top
 
 <img src="https://user-images.githubusercontent.com/44895720/91066571-2747ed80-e632-11ea-8ef5-80dcc5b5ccc1.jpeg" height="600">
 
-To mark these interactive parts the author decided to use color because this was the preferred method of the people who participated in the pre-study. As mentioned earlier the actual study is described in the master thesis.
+To mark these interactive parts the author decided to use color because this was the preferred method of the people who participated in the pre-study. As mentioned earlier, the actual study is described in the master thesis.
 
 ## 4. Audio/Video output
 
