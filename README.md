@@ -236,7 +236,7 @@ This is an optional step but the author decided to mark the interactive parts on
 
 The following figure shows all of these three resulting busts alongside the original plaster bust which got provided by the Staatliche Antikensammlungen.
 
-<img src="https://user-images.githubusercontent.com/44895720/90982668-eb952100-e568-11ea-9ef4-73038cea1cec.jpeg" width="600">
+<img src="https://user-images.githubusercontent.com/44895720/93712286-364c8d80-fb55-11ea-85a3-dc2aeb6e2aad.jpeg" width="600">
 
 ### Step 11: Mounting the bust
 
