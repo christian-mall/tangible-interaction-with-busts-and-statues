@@ -103,7 +103,7 @@ The next tests were to try to embed the copper foils into the plaster. This appr
 
 This is the backside of the setup (before the additional plaster got poured). This additional grounding made the readings better. Then this approach got further refined. Instead of placing an additional copper foil around the sensors the additional copper foil simply got put behind the sensors. In order to avoid any short circuit a layer of hot glue which acts as an isolating layer was used. A schematic drawing of this approach (using two sensors) can be seen in the next figure.
 
-<img src="https://user-images.githubusercontent.com/44895720/93201569-a91ec880-f751-11ea-95db-4f21d86e1888.png" width="600">
+<img src="https://user-images.githubusercontent.com/44895720/93712458-529cfa00-fb56-11ea-9ee7-c1f5d33679e3.png" width="600">
 
 There are of course no gaps in between the layers but this way the drawing is a bit easier to read. The bottom plaster layer is the thin layer that gets applied onto the silicone mold. After that follow the copper foils that act as the capacitive sensors. Then follows the layer of hot glue for the isolation followed by the second layer of copper foil. This is the layer that gets connected to a ground pin of the Arduino. Last but not least follows the second plaster layer which can basically be as thick as one wants to ensure enough stability to be able to get the casting out of the mold. Something important to note about using this Capacitive Sensing Library in general is that the whole system is not the most stable one. Some minor shifts from the cables could be enough sometimes that the sensor readings weren’t usable anymore. Also it turned out that it is best if the cables don’t touch one another because apparently this causes some capacitive interferences. This is why the author decided to use a different solution for this project. The solution that was found was to use the "Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121". As the name suggests it supports up to 12 individual touch pads. The MPR121 chip handles filtering and can also be configured to be more or less sensible. The following figure shows how this touch chip gets connected to the Arduino (there are two sensors connected to the chip).
 
@@ -218,7 +218,7 @@ The last step regarding the creation of the bust itself is to add the second lay
 
 The next figure shows an updated version of the schematic drawing from earlier. For this example, just two sensors are shown. The left one has a layer of gauze under it to give more stability while the right one is just left as is. It can also be seen that the layer of Moltofill got added to the drawing. This is the layer under the second plaster layer.
 
-<img src="https://user-images.githubusercontent.com/44895720/93202286-bbe5cd00-f752-11ea-918c-a16a37363d3e.png" width="600">
+<img src="https://user-images.githubusercontent.com/44895720/93712483-74967c80-fb56-11ea-84f2-71814af065ef.png" width="600">
 
 ### Step 9: Unmolding
 
