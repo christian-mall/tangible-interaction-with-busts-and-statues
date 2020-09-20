@@ -252,7 +252,7 @@ On the left hand side of the box the e-paper display gets placed and the cables 
 
 The following figure shows the back side of the wooden box with a few annotations regarding the different parts of the setup.
 
-<img src="https://user-images.githubusercontent.com/44895720/93350551-0e011e00-f839-11ea-82cd-499829e33fb6.jpeg" width="600">
+<img src="https://user-images.githubusercontent.com/44895720/93712582-1b7b1880-fb57-11ea-89fd-a89a14a0410d.jpeg" width="600">
 
 ## 6. Creation of the prototypes of the interactive miniature statues
 
@@ -298,4 +298,4 @@ The e-paper display did not get used for this particular application. For displa
 
 The following figure shows the back side of the wooden box with a few annotations regarding the different parts of the setup.
 
-<img src="https://user-images.githubusercontent.com/44895720/93354156-ffb50100-f83c-11ea-9abe-4ba9bfd1102c.jpeg" height="600">
+<img src="https://user-images.githubusercontent.com/44895720/93712603-41082200-fb57-11ea-99b0-461d3aa75235.jpeg" height="600">
