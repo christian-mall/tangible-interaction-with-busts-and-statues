@@ -138,11 +138,11 @@ Based on where the participants touched the statue and also the way they touched
 * Swiping across the forehead –> Information regarding Ludwig’s poetry
 * Swiping across the nose –> Information regarding Ludwig’s business communication
 
-The topics have been chosen by the author but what interaction triggers what topic got determined by the study. During the further prototyping process the author decided to also include 2 capacitive sensors in the hair. This should trigger some information regarding Lola Montez. The following figure shows the exact parts marked in an image editor.
+The topics have been chosen by the author but what interaction triggers what topic got determined by the study. During the further prototyping process the author decided to also include 2 capacitive sensors in the hair. This should trigger some information regarding Lola Montez. The following figure shows the exact areas marked in an image editor.
 
 <img src="https://user-images.githubusercontent.com/44895720/91066571-2747ed80-e632-11ea-8ef5-80dcc5b5ccc1.jpeg" height="600">
 
-To mark these interactive parts the author decided to use color because this was the preferred method of the people who participated in the pre-study. As mentioned earlier, the actual study is described in the master thesis.
+To mark these interactive areas the author decided to use color because this was the preferred method of the people who participated in the pre-study. As mentioned earlier, the actual study is described in the master thesis.
 
 ## 4. Audio/Video output
 
