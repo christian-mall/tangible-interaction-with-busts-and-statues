@@ -57,7 +57,7 @@ This section will describe how the capacitive sensing capabilities have been bui
 For this project the following two Arduinos got used for programming:
 
 * "ARDUINO UNO REV3" (was used to implement the capacitive sensing; got powered through a Laptop via USB)
-* "ARDUINO MEGA 2560 REV3" (was used for the prototypes that involve RFID which will get explained later on; got powered with a USB power supply)
+* "ARDUINO MEGA 2560 REV3" (was used for the prototypes that involve RFID which will get explained later on in chapter 6; got powered with a USB power supply)
 
 There’s a "Capacitive Sensing Library" for Arduino that can turn two or more Arduino pins into a capacitive sensor with the help of copper foils and resistors. These sensors can then sense the electrical capacitance of the human body. There are also dedicated sensors available that can be bought but the approach with the copper foils offers two important advantages:
 
@@ -91,7 +91,7 @@ This of course brings one major problem: The plaster layer on top of the copper 
 * Another way to make the sensors better discernible from one another is to place them as far apart from each other as possible.
 * And it also helps if the sensors aren’t too tiny. Making them a little bit bigger can already make a huge difference. Coin-shaped sensors with a diameter of about 2.5 cm worked quite well.
 * Another thing that got tested is whether it makes a difference if the sensor is touched on the non-glue side or on the glue side. The result was that it is better to touch it on the non-glue side because the glue apparently hinders the capacitive signal a bit but when put behind plaster the opposite is true. It is better if the foil gets properly glued onto the plaster so the direct contact is more important.
-* Another finding was that the resistors that are used make a huge difference on the quality of the readings. Too small and the signal spikes can’t be seen, too big and the whole system gets overly reactive. Then, even if someone gets near cables there are already huge signal spikes. A value that worked quite well for this particular scenario was 2 MΩ. There occur some signal spikes when the hand gets near the cables but this isn't too much of an issue because the signal spikes are larger when the actual sensors get touched and the cables also get placed behind the bust (this will get described more detailed later on).
+* Another finding was that the resistors that are used make a huge difference on the quality of the readings. Too small and the signal spikes can’t be seen, too big and the whole system gets overly reactive. Then, even if someone gets near cables there are already huge signal spikes. A value that worked quite well for this particular scenario was 2 MΩ. There occur some signal spikes when the hand gets near the cables but this isn't too much of an issue because the signal spikes are larger when the actual sensors get touched and the cables also get placed behind the bust (this will get described more detailed in chapter 5).
 * And lastly, the author found out than when the Laptop isn't connected to power, the readings were far more stable.
 
 The next tests were to try to embed the copper foils into the plaster. This approach is much more difficult because now the plaster is not only on top of the foils but also behind which further amplifies the problem of the capacitive signal inadvertently spreading throughout the plaster. To improve the signal-to-noise ratio an experiment was conducted where two prototypes got compared.
